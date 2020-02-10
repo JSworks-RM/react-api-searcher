@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Imagen from './Imagen'
+import Paginacion from './Paginacion'
 
 class Resultado extends Component {
 
@@ -17,6 +18,12 @@ class Resultado extends Component {
                             imagen={img}
                         />
                     ) )}
+                </div>
+                <div className="">
+                    <Paginacion 
+                        paginaAnterior={this.props.paginaAnterior}
+                        paginaSiguiente={this.props.paginaSiguiente}
+                    />
                 </div>
             </React.Fragment>
         )
